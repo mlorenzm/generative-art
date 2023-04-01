@@ -1,0 +1,28 @@
+:root{
+    --bg-color: #100c08;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display:flex;
+}
+
+.main-cell{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border:  3px solid white;
+
+}
+a{
+    display: block;
+    z-index:1;
+}
+a, .main-cell{
+
+    color: white;
+}
