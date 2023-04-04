@@ -1,5 +1,5 @@
 :root{
-    --bg-color: #100c08;
+    --bg-color: #1c1c1c;
 }
 
 body{
@@ -8,21 +8,22 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: var(--bg-color);
-    display:flex;
+    font-family: sans-serif;
 }
-
+.container{
+    padding:1rem;
+    height: 95%;
+    display: grid;
+    
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
 .main-cell{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
     border:  3px solid white;
 
 }
 a{
-    display: block;
-    z-index:1;
-}
-a, .main-cell{
-
+    text-decoration: none;
     color: white;
 }
